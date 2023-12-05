@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --bg-color: #fff;
+    --scnd-bg-clor: #FDFCE5;
+    --hover-: #dfa959;
+    --nav-color: #F4D19B;
+    --scnd-nav: #F9F3DF;
+    --text-clor: #000;
+    --scnd-text: #fff;
+    --font-text: 'Quicksand';
+}
+
+*{
+  scroll-behavior: smooth;
+  font-family: var(--font-text);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+ }
+
+body {
+    font-family:'Quicksand', sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+  }
+
+nav {
+    background-color: #D7E9F7;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+  }
+   
+nav a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline;
+    margin-left: 15px;   
+    color: var(--text-clor);
+    
+  }
+
+nav a:hover {
+    color: var(--hover-);
+  }
+
+
+.intro {
+    font-size: 20px;
+    padding: 60px;
+    background-color: var(--nav-color);
+    text-align: center;
+    color: white;
+  }
+
+  header {
+    display: inline;
+  }
+
+.header .nav{
+ margin-inline: auto;
+ display: flex;
+ justify-content: space-around;
+ padding-block: 1rem;
+ z-index: 100;
+  }
+
+main {
+    padding: 25px;
+    overflow: auto;
+    display: flex;
+  }
+
+#content {
+    width: 75%;
+  }
+
+.card {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    background-color: var(--scnd-bg-clor);
+    
+  }
+
+aside {
+    width: 25%;
+    padding-left: 20px;
+  }
+
+.aside header {
+    text-align: center;
+  }
+
+.fox-cuy {
+    width: 45%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.aside img{
+    width: 12rem;
+    border-radius: 30px;
+  }
+
+.ingpo h3 {
+  text-align: center;
+  }
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: var(--nav-color);
+    text-align: center;
+    font-weight: bold;
+  }
+
+article {
+  justify-content: space-between;
+}
+
+
+/* FLEXBOX */
+@media screen and (max-width: 1000px) {
+  #content, aside {
+    width: 48%;
+    padding: 0;
+  }
+
+  .aside img{
+    width: 100px;
+  }
+}
+
